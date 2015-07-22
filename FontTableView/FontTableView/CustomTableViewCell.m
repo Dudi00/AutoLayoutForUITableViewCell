@@ -41,6 +41,7 @@
     [self.contentView layoutIfNeeded];
     self.fontNameLabel.preferredMaxLayoutWidth = self.fontNameLabel.frame.size.width;
     self.quoteLabel.preferredMaxLayoutWidth = self.quoteLabel.frame.size.width;
+    self.quoteLabel2.preferredMaxLayoutWidth = self.quoteLabel2.frame.size.width;
 }
 
 @end

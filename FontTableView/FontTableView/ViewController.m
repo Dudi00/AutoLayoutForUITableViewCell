@@ -62,8 +62,10 @@
     
     int quoteIndex = indexPath.row % [_quoteArray count];
     cell.quoteLabel.text = _quoteArray[quoteIndex];
+    cell.quoteLabel2.text = _quoteArray[quoteIndex];
     NSString *fontName = _fontArray[indexPath.row];
     cell.quoteLabel.font = [UIFont fontWithName:fontName size:17];
+    cell.quoteLabel2.font = [UIFont fontWithName:fontName size:17];
     return cell;
     
 }
@@ -84,8 +86,10 @@
     
     int quoteIndex = indexPath.row % [_quoteArray count];
     self.customCell.quoteLabel.text = _quoteArray[quoteIndex];
+    self.customCell.quoteLabel2.text = _quoteArray[quoteIndex];
     NSString *fontName = _fontArray[indexPath.row];
     self.customCell.quoteLabel.font = [UIFont fontWithName:fontName size:17];
+    self.customCell.quoteLabel2.font = [UIFont fontWithName:fontName size:17];
 
     
     // Layout the cell
@@ -98,7 +102,8 @@
     
     // Padding of 1 point (cell separator)
     CGFloat separatorHeight = 1;
-
+    NSLog(@"%f",height);
+    
     return height + separatorHeight;
 }
 

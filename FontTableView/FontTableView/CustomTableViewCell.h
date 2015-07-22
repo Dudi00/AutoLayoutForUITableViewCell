@@ -12,5 +12,6 @@
 
 @property (weak, nonatomic) IBOutlet UILabel *quoteLabel;
 @property (weak, nonatomic) IBOutlet UILabel *fontNameLabel;
+@property (strong, nonatomic) IBOutlet UILabel *quoteLabel2;
 
 @end
